@@ -1,0 +1,88 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/** Fonts */
+.f-logo {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.f-listLink,
+.item h4,
+.content-feadback,
+.item,
+.footer {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 20px;
+}
+
+.f-contentHeader,
+.container-hello h2 {
+    font-family: "Source Code Pro", sans-serif;
+}
+
+.f-contentHeader h1 {
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 77px;
+}
+
+.f-contentHeader p {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+#pwd {
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 31px;
+}
+
+/*& ----------------------------*/
+.container {
+    width: 61%;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}
+
+/** Float || Display*/
+.f-left {
+    float: left;
+}
+
+.f-right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.d-inline-block {
+    display: inline-block;
+}

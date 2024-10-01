@@ -1,0 +1,647 @@
+@import url(../Style/general-style.css);
+
+/*! ======== Header ======== */
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/** ---- Nav-Bar ---- **/
+.nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
+}
+
+#home,
+.content-header h1,
+.logo a,
+#f-li {
+    color: #ff305b;
+}
+
+.list-link,
+.logo {
+    padding: 18px;
+}
+
+.list-link li {
+    padding: 0px 10px;
+}
+
+/** ---- Content Header ---- **/
+.header {
+    background-image: url("../Images/header.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+}
+
+.content-header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content-header p,
+a,
+#OR {
+    color: #fff;
+}
+
+
+/*& ---- Animation ---- **/
+.container-anim div {
+    display: inline-block;
+}
+
+.container-anim {
+    top: 55%;
+    left: 37%;
+    width: 500px;
+    position: absolute;
+}
+
+#pwd {
+    color: white;
+    font-weight: 400;
+    animation: transform_Text 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+.text span {
+    animation: hidden_Span 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+#OR {
+    text-align: left;
+    font-size: 30px;
+    animation: left_OR 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes hidden_Span {
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes transform_Text {
+    10% {
+        transform: translateX(0%);
+    }
+
+    100% {
+
+        transform: translateX(37%);
+    }
+}
+
+@keyframes left_OR {
+    10% {
+        width: 0px;
+    }
+
+    100% {
+        width: 100px;
+    }
+}
+
+
+/*! ======== Hello Section ======== */
+/** ---- Image ---- **/
+.hello-section,
+.our-services,
+.statistic,
+.heading-Feedback,
+.OurBlog {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.container-image {
+    border: solid 8px #555555;
+    width: 380px;
+    height: 480px;
+    border-radius: 8px;
+}
+
+.container-image img {
+    border-radius: 8px;
+}
+
+.image,
+.c-image {
+    width: 420px;
+    padding: 15px;
+}
+
+.social {
+    background-color: #fa0e3e;
+}
+
+.social .icons {
+    width: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    visibility: hidden;
+}
+
+.inner:hover .social .icons {
+    visibility: visible;
+}
+
+.icon-f i:hover,
+.icon-t i:hover,
+.icon-g i:hover,
+.icon-g i:hover {
+    color: #FF305B;
+}
+
+/** ---- Content Hello ---- **/
+
+.container-hello {
+    width: 55%;
+}
+
+.container-hello h2 {
+    border-left: solid 5px #ff305b;
+    padding-left: 15px;
+    margin: 0px 0px 30px 0px;
+    font-family: "Source Code Pro", sans-serif;
+    font-weight: 600;
+    line-height: 22px;
+    font-size: 33px;
+}
+
+.container-hello .lorem {
+    font-family: sans-serif;
+    font-weight: 400;
+    line-height: 25px;
+    font-size: 16px;
+    color: #555555;
+    text-align: justify;
+    padding-bottom: 30px;
+    margin: 0px 0px 30px 0px;
+    border-bottom: 1px #555555 dashed;
+}
+
+/** ---- Information ---- **/
+
+
+.information-1 {
+    width: 40%;
+}
+
+.information-2 {
+    width: 60%;
+}
+
+.information b {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: #333;
+    line-height: 16px;
+    font-size: 17px;
+
+}
+
+.information .small-text,
+.information button,
+.container-form button {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #555;
+    line-height: 16px;
+    font-size: 16px;
+}
+
+.information div {
+    margin-bottom: 20px;
+}
+
+.fa_download svg {
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+}
+
+.information button,
+.container-form button {
+    margin-right: 10px;
+    color: #fff;
+    padding: 15px 25px;
+    background-color: #FF305B;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.information button:hover {
+    background-color: #fa0e3e;
+}
+
+/*! ======== Our Services ======== */
+.our-services {
+    padding: 65px 0px;
+}
+
+.heading-services,
+.heading-Portfolio,
+.item h3,
+.heading-Feedback {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+    color: #333;
+    line-height: 50px;
+}
+
+/** ---- Lines With After & Before ---- **/
+.lines {
+    margin: auto;
+    margin-top: 9px;
+    width: 15%;
+    position: relative;
+}
+
+.mid-line {
+    margin: auto;
+    height: 1px;
+    width: 80%;
+    background-color: #FF305B;
+    position: absolute;
+    top: 0px;
+    left: 10%;
+
+}
+
+.mid-line::before {
+    content: '';
+    width: 50%;
+    height: 0.4px;
+    top: -5px;
+    left: 25%;
+    background-color: #FF305B;
+    position: absolute;
+
+}
+
+.mid-line::after {
+    content: '';
+    width: 50%;
+    height: 0.4px;
+    top: 5px;
+    left: 25%;
+    background-color: #FF305B;
+    position: absolute;
+}
+
+/** ---- Lines With Div & Border ---- **/
+/*
+.top-line{
+    margin-bottom: 3px;
+    width: 50%;;
+    margin-left: 26%;
+    border: solid 0.2px #ff30598f;
+}
+
+.mid-line{
+    width: 100%;
+    border: solid 1px #ff305b;
+}
+
+.bottom-line{
+    margin-top: 3px;
+    width: 50%;;
+    margin-left: 26%;
+    border-style: ridge;
+    border: solid 0.2px #ff30598f;
+}
+*/
+
+/** ---- Our Services ---- **/
+.our-services {
+    overflow: hidden;
+    background-color: #F1F1F1;
+}
+
+.services {
+    margin-top: 50px;
+}
+
+.service {
+    width: 25%;
+    margin: auto;
+    text-align: center;
+    padding: 8px;
+    color: #555;
+}
+
+.service:hover {
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    background-color: #fff;
+
+}
+
+.service:hover svg {
+    transform: scale(1.2);
+}
+
+.svg-icon svg {
+    width: 30px;
+    margin: 25px;
+}
+
+.service h3,
+.content-feadback h3 {
+    color: #333;
+    line-height: 26px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0px 15px 15px 15px;
+}
+
+.service p {
+    padding: 0px 15px 30px 15px;
+}
+
+/*! ======== Our Portfolio ======== */
+.heading-Portfolio,
+.heading-Feedback {
+    overflow: hidden;
+    padding: 10px;
+}
+
+.list-portfolio {
+    width: 50%;
+    text-align: center;
+    margin-left: 30%;
+    margin-top: 3%;
+    margin-bottom: 10%;
+    background-color: #333;
+}
+
+.li-portfolio {
+    font-weight: 400;
+    padding: 10px 20px 0px;
+    line-height: 25px;
+}
+
+/** ---- Cards Image ---- **/
+.card-image {
+    overflow: hidden;
+}
+
+.c-image {
+    width: 33%;
+}
+
+.inner {
+    position: relative;
+}
+
+.inner img {
+    border-radius: 8px;
+    display: block;
+}
+
+.overlay2 {
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.inner:hover .overlay2 {
+    top: 0%;
+    transition: all 1s ease-in-out;
+    border-radius: 8px;
+}
+
+/*! ======== Statistic ======== */
+.statistic {
+    color: #333;
+    background-color: #F1F1F1;
+}
+
+.container-items {
+    text-align: center;
+}
+
+.item {
+    width: 25%;
+    padding: 8% 0px;
+}
+
+.item h4 {
+    color: #555;
+    font-weight: 500;
+}
+
+.item svg {
+    padding-bottom: 10px;
+    width: 30px;
+}
+
+/*! ======== Client's Feedback ======== */
+.test {
+    position: absolute;
+    width: 40%;
+}
+
+.card-feadback {
+    margin: auto;
+    width: 70%;
+    height: 280px;
+    padding: 35px;
+    background-color: #F1F1F1;
+    overflow: hidden;
+}
+
+.s-image {
+    width: 15%;
+    margin-left: 20px;
+}
+
+.s-image img {
+    border-radius: 50%;
+}
+
+.content-feadback {
+    width: 80%;
+}
+
+.border {
+    width: 0px;
+    border-top: solid 160px #FF305B;
+    border-right: solid 160px transparent;
+    position: absolute;
+    left: 545px;
+}
+
+.content-feadback a,
+.content-feadback p,
+.icon {
+    padding: 10px;
+
+}
+
+.content-feadback h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 29px;
+    color: #333;
+}
+
+.content-feadback svg {
+    width: 15px;
+}
+
+.content-feadback p {
+    text-align: justify;
+    line-height: 25px;
+    color: #555;
+    font-weight: 400;
+}
+
+#loc {
+    color: #333;
+}
+
+/*! ======== Our Blog ======== */
+.ourBlog {
+    color: #333;
+    background-color: #F1F1F1;
+    margin-top: 90px;
+    padding-top: 1px;
+    padding-bottom: 60px;
+}
+
+.item-blog {
+    width: 33%;
+    padding: 2%;
+}
+
+.tesst {
+    background-color: #fff;
+    padding-bottom: 30px;
+}
+
+.items {
+    text-align: left;
+}
+
+.items p,
+.item-blog a,
+.items h3 {
+    padding: 0px 0px 0px 10px;
+}
+
+.item-blog img {
+    margin-bottom: 20px;
+}
+
+.items p {
+    line-height: 22px;
+    margin-bottom: 15px;
+    color: #555555ea;
+}
+
+.items h3 {
+    text-align: left;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 0px 0px 10px 10px;
+}
+
+.tesst #p {
+    padding-top: 10px;
+}
+
+.item-blog a {
+    color: #333;
+    font-weight: 400;
+    display: contents;
+    font-family: "Roboto", sans-serif;
+}
+
+#more {
+    display: inline;
+}
+
+.tesst iframe {
+    width: 100%;
+}
+
+/*! ======== Contact Us ======== */
+.container-form {
+    margin: auto;
+    width: 70%;
+    padding: 0px 30px 30px 30px;
+}
+
+.container-form input,
+.container-form textarea {
+    padding: 15px;
+    width: 48.3%;
+    margin-bottom: 25px;
+    border: solid 1px rgba(128, 128, 128, 0.345);
+    border-radius: 5px;
+    resize: vertical;
+}
+
+#in-1 {
+    margin-right: 20px;
+}
+
+.container-form #subject,
+.container-form textarea {
+    width: 100%;
+}
+
+/*! ======== Footer ======== */
+.footer {
+    margin-top: 90px;
+    padding: 40px;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+}
+
+.footer a {
+    color: #fa0e3e;
+}
+
+.icons {
+    margin: auto;
+    width: 17%;
+    padding: 10px;
+}
+
+.icon-f,
+.icon-g,
+.icon-t {
+    width: 40px;
+    padding: 10px;
+}
