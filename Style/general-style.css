@@ -86,3 +86,74 @@ img {
 .d-inline-block {
     display: inline-block;
 }
+
+
+
+
+/*& ====================== */
+/*& ---- Animation ---- **/
+/*
+.container-anim div {
+    display: inline-block;
+}
+
+.container-anim {
+    top: 55%;
+    left: 37%;
+    width: 500px;
+    position: absolute;
+}
+
+#pwd {
+    color: white;
+    font-weight: 400;
+    animation: transform_Text 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+.text span {
+    animation: hidden_Span 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+#OR {
+    text-align: left;
+    font-size: 30px;
+    animation: left_OR 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes hidden_Span {
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes transform_Text {
+    10% {
+        transform: translateX(0%);
+    }
+
+    100% {
+
+        transform: translateX(37%);
+    }
+}
+
+@keyframes left_OR {
+    10% {
+        width: 0px;
+    }
+
+    100% {
+        width: 100px;
+    }
+}
+
+*/

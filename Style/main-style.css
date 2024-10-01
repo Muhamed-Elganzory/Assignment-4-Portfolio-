@@ -38,7 +38,6 @@
     background-size: cover;
     background-position: center;
     height: 100vh;
-
 }
 
 .content-header {
@@ -54,8 +53,9 @@ a,
     color: #fff;
 }
 
-
+/*& ====================== */
 /*& ---- Animation ---- **/
+
 .container-anim div {
     display: inline-block;
 }
@@ -118,7 +118,6 @@ a,
         width: 100px;
     }
 }
-
 
 /*! ======== Hello Section ======== */
 /** ---- Image ---- **/
