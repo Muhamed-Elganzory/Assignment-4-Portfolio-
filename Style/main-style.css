@@ -598,6 +598,11 @@ a,
     width: 100%;
 }
 
+.tesst #more:hover {
+    color: #fa0e3e;
+    transition: color 0.3s ease-in-out;
+}
+
 /*! ======== Contact Us ======== */
 .container-form {
     margin: auto;
@@ -613,6 +618,7 @@ a,
     border: solid 1px rgba(128, 128, 128, 0.345);
     border-radius: 5px;
     resize: vertical;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, .075);
 }
 
 #in-1 {
@@ -622,6 +628,10 @@ a,
 .container-form #subject,
 .container-form textarea {
     width: 100%;
+}
+
+input:focus {
+    border-color: #a94442;
 }
 
 /*! ======== Footer ======== */
